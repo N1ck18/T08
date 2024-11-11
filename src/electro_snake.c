@@ -26,10 +26,11 @@ int input_matrix_size(int *x, int *y);
 int **create_two_array_matrix(int n, int m);
 void reverse_array(int *temp, int n);
 int **create_single_array_matrix(int x, int y);
+
 int main() {
   int **matrix, **result;
   int n, m;
-  input_matrix_size(&n, &m);
+  input_matrix_size(&m, &n);
   matrix = create_single_array_matrix(n, m);
   input(matrix, n, m);
   result = create_single_array_matrix(n, m);
